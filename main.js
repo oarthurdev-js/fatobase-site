@@ -1,13 +1,13 @@
-// Número de WhatsApp (só dígitos, com 55 + DDD). Vazio = botões levam para a seção de contato.
-const WHATSAPP = "";
-const MENSAGEM = "Oi! Vi o site do Canal Dark Sem Esforço e quero montar meu canal de notícias.";
+// Link de contato dos botões "Quero começar" (Telegram, formulário, e-mail...). Vazio = levam para o preço.
+const CONTATO = "";
 
-if (WHATSAPP) {
-  const link = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(MENSAGEM)}`;
+if (CONTATO) {
   document.querySelectorAll(".js-contato").forEach((a) => {
-    a.href = link;
-    a.target = "_blank";
-    a.rel = "noopener";
+    a.href = CONTATO;
+    if (/^https?:/.test(CONTATO)) {
+      a.target = "_blank";
+      a.rel = "noopener";
+    }
   });
 }
 
