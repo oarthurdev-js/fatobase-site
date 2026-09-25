@@ -28,7 +28,7 @@ img { max-width: 100%; }
 
 /* Botões */
 .btn {
-  display: inline-flex; align-items: center; justify-content: center;
+  display: inline-flex; white-space: nowrap; align-items: center; justify-content: center;
   background: var(--accent); color: var(--accent-ink);
   font-weight: 700; padding: 14px 24px; border-radius: 999px;
   transition: transform .15s ease, box-shadow .15s ease;
@@ -48,7 +48,7 @@ img { max-width: 100%; }
   border-bottom: 1px solid var(--line);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
-.logo { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.1rem; }
+.logo { display: inline-flex; white-space: nowrap; align-items: center; gap: 10px; font-weight: 800; font-size: 1.1rem; }
 .logo-mark {
   display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px;
   background: var(--surface); color: var(--accent); font-weight: 800; border: 1px solid var(--line);
@@ -59,6 +59,7 @@ img { max-width: 100%; }
 /* Hero */
 .hero { padding: 72px 0 88px; background: radial-gradient(900px 500px at 80% 20%, rgba(255, 209, 102, .08), transparent 60%); }
 .hero-inner { display: grid; grid-template-columns: 1.2fr .8fr; gap: 56px; align-items: center; }
+.hero-inner > * { min-width: 0; }
 .pill {
   display: inline-block; font-size: .8rem; font-weight: 600; color: var(--accent);
   border: 1px solid rgba(255, 209, 102, .35); border-radius: 999px; padding: 6px 14px; margin-bottom: 20px;
@@ -167,8 +168,9 @@ details p { margin-top: 12px; color: var(--muted); }
   .wrap { padding: 0 16px; }
   .hero { padding: 48px 0 64px; }
   .section { padding: 64px 0; }
-  .hero-cta .btn { width: 100%; }
+  .hero-cta .btn { width: 100%; white-space: normal; text-align: center; }
   .price-card { padding: 28px 22px; }
+  .nav .btn-sm { display: none; }
   .phone { width: 240px; }
 }
 @media (prefers-reduced-motion: reduce) {

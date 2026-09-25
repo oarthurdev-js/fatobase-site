@@ -1,6 +1,6 @@
 // Número de WhatsApp (só dígitos, com 55 + DDD). Vazio = botões levam para a seção de contato.
 const WHATSAPP = "";
-const MENSAGEM = "Oi! Vi o site do Fato Base e quero montar meu canal de notícias.";
+const MENSAGEM = "Oi! Vi o site do Canal Dark Sem Esforço e quero montar meu canal de notícias.";
 
 if (WHATSAPP) {
   const link = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(MENSAGEM)}`;
