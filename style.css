@@ -148,8 +148,8 @@ details { border-bottom: 1px solid var(--line); padding: 20px 0; }
 details:first-of-type { margin-top: 32px; }
 summary { cursor: pointer; font-weight: 600; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
 summary::-webkit-details-marker { display: none; }
-summary::after { content: "+"; color: var(--accent); font-size: 1.4rem; line-height: 1; }
-details[open] summary::after { content: "–"; }
+summary::after { content: "+"; color: var(--accent); font-size: 1.4rem; line-height: 1; transition: transform .2s ease; }
+details[open] summary::after { transform: rotate(45deg); }
 details p { margin-top: 12px; color: var(--muted); }
 
 .cta-final { background: radial-gradient(700px 300px at 50% 0%, rgba(255, 209, 102, .12), transparent 70%); }

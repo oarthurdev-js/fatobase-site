@@ -1,4 +1,4 @@
-// Link de contato dos botões "Quero começar" (Telegram, formulário, e-mail...). Vazio = levam para o preço.
+// Link de contato dos botões "Quero começar" (formulário, e-mail...). Vazio = levam para o preço.
 const CONTATO = "";
 
 if (CONTATO) {
