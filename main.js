@@ -1,14 +1,8 @@
-// Link de contato dos botões "Quero começar" (formulário, e-mail...). Vazio = levam para o preço.
-const CONTATO = "";
+// Os botões "Quero..." levam ao cadastro do painel, já com o plano escolhido.
+const CADASTRO = "https://darkchannel.meprepara.app.br/cadastro";
 
-if (CONTATO) {
-  document.querySelectorAll(".js-contato").forEach((a) => {
-    a.href = CONTATO;
-    if (/^https?:/.test(CONTATO)) {
-      a.target = "_blank";
-      a.rel = "noopener";
-    }
-  });
-}
+document.querySelectorAll(".js-contato").forEach((a) => {
+  a.href = CADASTRO + (a.dataset.plano ? "?plano=" + encodeURIComponent(a.dataset.plano) : "");
+});
 
 document.getElementById("ano").textContent = new Date().getFullYear();

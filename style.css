@@ -81,8 +81,7 @@ h1 { font-size: clamp(2rem, 4.4vw, 3.3rem); line-height: 1.12; font-weight: 800;
 }
 .platform svg { width: 44px; height: 44px; }
 .platform.soon { position: relative; }
-.platform.soon svg { opacity: .45; filter: grayscale(.4); }
-.soon-tag { position: absolute; left: 50%; bottom: -12px; transform: translateX(-50%); white-space: nowrap; font-size: .68rem; font-weight: 700; letter-spacing: .02em; padding: 2px 8px; border-radius: 999px; background: #0b1020; border: 1px solid rgba(255,255,255,.18); color: #cfd6e4; }
+.soon-tag { position: absolute; left: 50%; bottom: -12px; transform: translateX(-50%); white-space: nowrap; font-size: .68rem; font-weight: 700; letter-spacing: .02em; padding: 2px 9px; border-radius: 999px; border: 1px solid transparent; background: linear-gradient(var(--bg-2), var(--bg-2)) padding-box, var(--neon) border-box; color: var(--cyan); box-shadow: 0 0 12px rgba(34, 211, 238, .25); }
 
 /* Recursos */
 .block { padding: 72px 0; }
