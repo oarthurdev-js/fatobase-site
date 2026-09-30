@@ -1,4 +1,4 @@
-# canal-dark-site
+# fatobase-site
 
 Landing page do Canal Dark Sem Esforço. HTML/CSS/JS puros, sem build, publicada pelo GitHub Pages (Settings → Pages → Deploy from branch → `main` / root).
 
