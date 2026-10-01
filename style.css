@@ -123,6 +123,10 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); line-height: 1.2; font-weight: 700; 
   font: 700 .8rem "Sora", sans-serif; padding: 6px 14px; border-radius: 999px; background: var(--neon);
 }
 .plan h3 { font-size: 1.35rem; }
+.plan-soon { opacity: .75; }
+.badge-soon { background: var(--bg-2); color: var(--muted); }
+.btn-disabled { opacity: .6; cursor: not-allowed; pointer-events: none; }
+.soon-note { color: var(--muted); font-size: .85rem; margin-top: 10px; text-align: center; }
 .plan-sub { color: var(--muted); font-size: .95rem; margin-top: 4px; min-height: 3em; }
 .price { font: 800 3rem/1 "Sora", sans-serif; margin-top: 18px; letter-spacing: -.03em; white-space: nowrap; }
 .price .cur { font-size: 1.1rem; font-weight: 600; color: var(--muted); margin-right: 4px; letter-spacing: 0; }
